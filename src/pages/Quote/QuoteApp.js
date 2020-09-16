@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './components/staranim.css';
 
 import RadioInputs from './components/RadioInputs';
@@ -6,7 +6,6 @@ import NumberInputs from './components/NumberInputs';
 import MainHeader from './components/MainHeader';
 import ProjectSelector from './components/ProjectSelector';
 import Quote from './components/Quote';
-import Loading from './components/Loading';
 
 import ScrollToTopOnMount from '../../generic/ScrolllToTop';
 import ScrollUpButton from 'react-scroll-up-button';
@@ -34,8 +33,6 @@ export default function QuoteApp() {
     URL: '',
     ErrorHappened: false,
   });
-
-  const [isLoading, setIsLoading] = useState(false);
 
   let URLs = {
     residential: `/api/quote/residential/${inputs.Floors}/${inputs.Basements}/${inputs.Apartments}/${inputs.Rate}/`,
@@ -155,7 +152,7 @@ export default function QuoteApp() {
               setInputs={setInputs}
             />
 
-            {isLoading ? <Loading /> : <Quote quote={quote} />}
+            <Quote quote={quote} />
           </div>
         )}
       </section>
