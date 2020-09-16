@@ -35,10 +35,10 @@ export default function QuoteApp() {
   });
 
   let URLs = {
-    residential: `/api/quote/residential/${inputs.Floors}/${inputs.Basements}/${inputs.Apartments}/${inputs.Rate}/`,
-    commercial: `/api/quote/com/${inputs.Elevators}/${inputs.Rate}/`,
-    corporate: `/api/quote/ch/${inputs.Floors}/${inputs.Occupants}/${inputs.Rate}/`,
-    hybrid: `/api/quote/ch/${inputs.Floors}/${inputs.Occupants}/${inputs.Rate}/`,
+    residential: `https://rocketelevatorsbackend.herokuapp.com/api/quote/residential/${inputs.Floors}/${inputs.Basements}/${inputs.Apartments}/${inputs.Rate}/`,
+    commercial: `https://rocketelevatorsbackend.herokuapp.com/api/quote/com/${inputs.Elevators}/${inputs.Rate}/`,
+    corporate: `https://rocketelevatorsbackend.herokuapp.com/api/quote/ch/${inputs.Floors}/${inputs.Occupants}/${inputs.Rate}/`,
+    hybrid: `https://rocketelevatorsbackend.herokuapp.com/api/quote/ch/${inputs.Floors}/${inputs.Occupants}/${inputs.Rate}/`,
   };
 
   function inputChangeHandler(event) {
