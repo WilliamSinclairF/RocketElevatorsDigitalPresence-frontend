@@ -171,7 +171,7 @@ export default function ResidentialPage() {
 
               <Link to='/quote'>
                 <Button size='lg'>
-                  <span className='fs-40'>GET A QUOTE</span>
+                 GET A QUOTE
                 </Button>
               </Link>
             </div>

@@ -8,53 +8,53 @@ import { Button } from 'react-bootstrap';
 
 export default function Banner() {
   return (
-    <div id='services' className='container-fluid text-black'>
-      <div className='d-flex justify-content-center'>
-        <div className='col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
-          <h2>
+    <div id='services' className='container text-black'>
+      <div className='row'>
+        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
+          <h4>
             <FontAwesomeIcon icon={faAward} className='fa-2x mt-18 mb-1' />
             <br />
             42
-          </h2>
+          </h4>
 
           <p>
             AWARDS <br /> AND COUNTING
           </p>
           <a href='#portfolio'>
-            <Button variant='outline-primary' size='lg' className='m-5'>
+            <Button variant='outline-primary' size='lg' className='mb-3'>
               ViEW AWARDS
             </Button>
           </a>
         </div>
 
-        <div className='col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
-          <h2>
+        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
+          <h4>
             <FontAwesomeIcon icon={faHome} className='fa-2x mt-18 mb-1' />
             <br />
             296
-          </h2>
+          </h4>
           <p>
             RESIDENTIAL PROJECTS <br /> TO DATE
           </p>
           <Link to='/residential'>
-            <Button variant='outline-primary' size='lg' className='m-5'>
+            <Button variant='outline-primary' size='lg' className='mb-3'>
               MORE INFO
             </Button>
           </Link>
         </div>
 
-        <div className='col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
-          <h2 className='countTo font-raleway' data-speed='1000'>
+        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
+          <h4 className='countTo font-raleway' data-speed='1000'>
             <FontAwesomeIcon icon={faBuilding} className='fa-2x mt-18 mb-1' />
             <br />
             666
-          </h2>
+          </h4>
           <p>
             CORPORATE & COMMERCIAL <br /> PROJECTS TO DATE
           </p>
 
           <Link to='/commercial'>
-            <Button variant='outline-primary' size='lg' className='m-5'>
+            <Button variant='outline-primary' size='lg' className='mb-3'>
               MORE INFO
             </Button>
           </Link>

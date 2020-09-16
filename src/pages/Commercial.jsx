@@ -116,12 +116,12 @@ export default function CommercialPage() {
               <h2 className='text-blue mb-30 fw-300'>
                 You need your employees there on time, every time
               </h2>
-              <h6 className='bold text-gray mb-30'>We can help</h6>
+        
               <p className='fs-20 text-blue bold'>Get a quote today!</p>
 
               <Link to='/quote'>
                 <Button size='lg'>
-                  <span className='fs-40'>GET A QUOTE</span>
+                GET A QUOTE
                 </Button>
               </Link>
             </div>

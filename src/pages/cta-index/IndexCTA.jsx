@@ -6,22 +6,34 @@ import './CTA.css';
 export default function IndexCTA() {
   return (
     <section className='bgImage'>
-      <div className='text-center container-fluid'>
-        <h1 className='text-white fs-60'>
+      <div className="container">
+        <div className="col-12 text-center">
+          <h2 className='text-white'>
           Elevated Above The Competition Since 1976
-        </h1>
-        <Link to='/quote'>
-          <Button variant='outline-primary' size='lg' className='m-5'>
-            <span className='fs-40 bold text-white'>GET A QUOTE</span>
-          </Button>
-        </Link>
+        </h2>
+        </div>
+   
+   
+        <div className="d-flex justify-content-center">
+          <Link to='/quote'>
+            <div className='mt-4 ml-5 mr-5'>
+              <Button variant='primary' size='lg'>
+            GET A QUOTE
+              </Button>
+            </div>
 
-        <a href='#contact'>
-          <Button variant='outline-primary' size='lg' className='m-5'>
-            <span className='fs-40 bold text-white'>CONTACT US</span>
-          </Button>
-        </a>
-      </div>
+          </Link>
+
+          <div className='mt-4 ml-5 mr-5'>
+            <a href='#contact'>
+              <Button variant='secondary' size='lg'>
+               CONTACT US
+              </Button>
+            </a>
+          </div>
+          </div>
+
+        </div>
     </section>
   );
 }

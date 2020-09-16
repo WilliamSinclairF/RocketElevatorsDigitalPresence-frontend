@@ -30,11 +30,11 @@ export default function Header() {
           <Nav className='mr-auto'>
             <ScrollUpButton>
               <Nav.Link as={Link} to='/' href='/'>
-                <p className='fw-300 fs-20 bold mt-25'>HOME</p>
+                <p className='fw-300 fs-20 mt-25'>HOME</p>
               </Nav.Link>
             </ScrollUpButton>
             <NavDropdown
-              title={<p className='fw-300 fs-20 bold mb-0 mt-25'>SERVICES</p>}>
+              title={<p className='fw-300 fs-20 mb-0 mt-25'>SERVICES</p>}>
               <NavDropdown.Item as={Link} to='/residential' href='/residential'>
                 <p className='fw-300 fs-20'>RESIDENTIAL</p>
               </NavDropdown.Item>
@@ -48,16 +48,16 @@ export default function Header() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href='/#portfolio'>
-              <p className='fw-300 fs-20 bold mt-25'>PORTFOLIO</p>
+              <p className='fw-300 fs-20 mt-25'>PORTFOLIO</p>
             </Nav.Link>
             <Nav.Link href='#contact'>
-              <p className='fw-300 fs-20 bold mt-25'>CONTACT</p>
+              <p className='fw-300 fs-20 mt-25'>CONTACT</p>
             </Nav.Link>
             <Nav.Link
               as={Link}
               to='/quote'
               className='text-blue quote-cta glowButton'>
-              <p className='fw-300 fs-20 bold mt-25'> GET A QUOTE</p>
+              <p className='fw-300 fs-20 mt-25'> GET A QUOTE</p>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
