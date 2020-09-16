@@ -1,0 +1,112 @@
+.slideempemp h1 {
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.slideempemp button {
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.slideempemp p,
+h3 {
+  transition: all 0.3s ease;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.slideempemp section * {
+  transition: all 0.3s ease;
+}
+
+.slideempemp section img {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.slideempemp section span {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.slideempemp section span strong {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slideempemp.animateIn.previous h1,
+.slideempemp.current h1,
+.slideempemp.animateIn.next h1,
+.slideempemp.animateIn.previous button,
+.slideempemp.current button,
+.slideempemp.animateIn.next button,
+.slideempemp.animateIn.previous p,
+.slideemp.current p,
+.slideemp.animateIn.next p,
+.slideemp.animateIn.previous section *,
+.slideemp.current section *,
+.slideemp.animateIn.next section * {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+  opacity: 1;
+}
+
+.slideemp.animateIn.previous p,
+.slideemp.animateIn.next p {
+  -webkit-transition-delay: 1.1s;
+  transition-delay: 1.1s;
+}
+
+.slideemp.animateIn.previous button,
+.slideemp.animateIn.next button {
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+
+.slideemp.animateIn.previous section img,
+.slideemp.animateIn.next section img {
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+
+.slideemp.animateIn.previous section span,
+.slideemp.animateIn.next section span {
+  -webkit-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+
+.slideemp.animateIn.previous section span strong,
+.slideemp.animateIn.next section span strong {
+  -webkit-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.slideemp.animateOut h1 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.slideemp.animateOut p {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.slideemp.animateOut section span {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.slideemp.animateOut section span strong {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}

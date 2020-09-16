@@ -1,0 +1,8 @@
+.numberInput {
+  width: 50%;
+}
+
+.numberInput::placeholder {
+  font-size: smaller;
+  text-align: center;
+}

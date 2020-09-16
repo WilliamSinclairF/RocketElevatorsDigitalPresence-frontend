@@ -1,0 +1,12 @@
+.topslider {
+  max-height: 600px;
+  overflow: hidden;
+  background-size: cover !important;
+  object-fit: cover;
+}
+
+.slick-slide {
+  background-size: cover !important;
+  overflow: hidden;
+  object-fit: cover;
+}
