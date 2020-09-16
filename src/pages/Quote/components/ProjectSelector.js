@@ -4,7 +4,6 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import { blue } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -47,6 +46,7 @@ export default function ProjectSelector({
       Elevators: '',
       Rate: '',
     });
+    // eslint-disable-next-line
   }, [inputs.SelectedProject]);
 
   return (

@@ -75,7 +75,7 @@ export default function CommercialPage() {
               </ul>
             </div>
             <div className='col-8 text-center mt-30'>
-              <img src={require('../assets/RE_assets/executives.png')}></img>
+              <img src={require('../assets/RE_assets/executives.png')} alt="our executives"></img>
 
               <p>
                 <bold>Our Senior Engineers</bold>

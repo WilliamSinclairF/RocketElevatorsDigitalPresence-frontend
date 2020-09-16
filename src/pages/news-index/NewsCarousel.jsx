@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import React from 'react'
 import 'react-multi-carousel/lib/styles.css';
 import newsdata from './newsdata'
-import { faGlobe, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const responsive = {
@@ -29,7 +29,9 @@ const responsive = {
       <div class='mt-5'></div>
       <div className='pb-60'>
         <p class='mt-5'>
-          <a href={article.href} target='_blank'>
+          <a href={article.href} target='_blank'
+            rel="noopener noreferrer"
+          >
             {article.title}
           </a>
         </p>
@@ -41,7 +43,8 @@ const responsive = {
             <a
               className='mr-3'
               href='https://elevatortoday.com/'
-              target='_blank'>
+              target='_blank'
+              rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGlobe} />
               <span> ELEVATOR TODAY</span>
             </a>
@@ -51,6 +54,7 @@ const responsive = {
             <a
               href={article.href}
               target='_blank'
+              rel="noopener noreferrer"
               class='btn btn-reveal btn-default b-0 btn-shadow-1'>
               <span class='text-blue'>
                 

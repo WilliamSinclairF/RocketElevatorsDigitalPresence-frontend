@@ -29,6 +29,7 @@ export default function NumberInputs({
 
   useEffect(() => {
     setInputs({ ...inputs, ErrorHappened: false });
+    // eslint-disable-next-line
   }, [
     inputs.Floors,
     inputs.Basements,

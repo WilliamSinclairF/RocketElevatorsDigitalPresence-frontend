@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
 
+// eslint-disable-next-line
 const Map = (props: any) => {
   const getMapOptions = (maps: any) => {
     return {
@@ -17,8 +18,9 @@ const Map = (props: any) => {
       ],
     };
   };
-
+// eslint-disable-next-line
   const [center, setCenter] = useState({ lat: 45.45942, lng: -73.56727 });
+  // eslint-disable-next-line
   const [zoom, setZoom] = useState(15);
 
   return (

@@ -20,10 +20,12 @@ export default function RadioInputs({
     } else {
       getQuoteData();
     }
+    // eslint-disable-next-line
   }, [inputs.Rate]);
 
   useEffect(() => {
     setInputs({ ...inputs, Rate: '' });
+    // eslint-disable-next-line
   }, [inputs.ErrorHappened]);
 
   // useEffect(() => {

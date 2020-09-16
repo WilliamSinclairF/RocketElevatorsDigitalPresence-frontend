@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Slider from 'react-animated-slider';
-import Button from 'react-bootstrap/Button';
 import content from './content';
 import 'react-animated-slider/build/horizontal.css';
 import './employeestyle.css';
