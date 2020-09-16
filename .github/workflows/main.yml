@@ -14,4 +14,4 @@ jobs:
       - name: Build static site
         run: npm install && npm run-script build
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./build/ s3://http://rocketelevators.s3-website.us-east-2.amazonaws.com --delete
+        run: aws s3 sync ./build/ s3://rocketelevators --delete
