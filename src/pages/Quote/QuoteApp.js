@@ -62,7 +62,7 @@ export default function QuoteApp() {
           break;
 
         case 'commmercial':
-          if (inputs.Elevators < 0) {
+          if (inputs.Elevators <= 0) {
             setInputs({ ...inputs, ErrorHappened: true });
           }
           break;
