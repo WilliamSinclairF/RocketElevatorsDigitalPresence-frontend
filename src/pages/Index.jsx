@@ -35,9 +35,6 @@ export default function IndexPage() {
       <IndexCTA />
       <PortfolioContainer />
 
-    
-
-
       <EmployeeSlider />
       <NewsContainer />
       <Clients />

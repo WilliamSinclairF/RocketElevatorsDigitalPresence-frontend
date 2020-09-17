@@ -10,7 +10,7 @@ export default function Banner() {
   return (
     <div id='services' className='container text-black'>
       <div className='row'>
-        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
+        <div className='container col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center mr-10 ml-10'>
           <h4>
             <FontAwesomeIcon icon={faAward} className='fa-2x mt-18 mb-1' />
             <br />
@@ -27,7 +27,7 @@ export default function Banner() {
           </a>
         </div>
 
-        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
+        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center mr-10 ml-10'>
           <h4>
             <FontAwesomeIcon icon={faHome} className='fa-2x mt-18 mb-1' />
             <br />
@@ -43,7 +43,7 @@ export default function Banner() {
           </Link>
         </div>
 
-        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center card'>
+        <div className='container col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center mr-10 ml-10'>
           <h4 className='countTo font-raleway' data-speed='1000'>
             <FontAwesomeIcon icon={faBuilding} className='fa-2x mt-18 mb-1' />
             <br />

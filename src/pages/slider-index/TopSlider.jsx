@@ -9,7 +9,7 @@ import './styles.css';
 
 
 const TopSlider = () => (
-  <Slider className='slider-wrapper' duration={7000} autoplay={3000}>
+  <Slider className='slider-wrapper' duration={7000} autoplay={2000} disabled={false}>
     {content.map((photo, index) => (
       <div
         key={index}

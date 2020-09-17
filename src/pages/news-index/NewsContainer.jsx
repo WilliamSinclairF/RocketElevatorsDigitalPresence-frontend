@@ -4,11 +4,11 @@ import './newsbackground.css'
 
 export default function NewsContainer() {
   return (
-    <section>
-      <div className='container text-center'>
-        <div>
-          <h2 className='text-blue fw-300'>News From The Elevator Space</h2>
-        </div>
+    <section id='news' className="news mt-60">
+      <div>
+        <h2 className='text-white text-center'>News From The Elevator Space</h2>
+      </div>
+      <div className='container-fluid text-center'>
         <NewsCarousel />
       </div>
     </section>

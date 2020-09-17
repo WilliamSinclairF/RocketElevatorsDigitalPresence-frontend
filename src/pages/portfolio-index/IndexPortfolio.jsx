@@ -21,7 +21,6 @@ function NewPortfolio() {
               <p className='fs-19 text-center text-blue fw-300'>
                 {photo.title}
               </p>
-              <p className={'text-center text-gray mt-0'}>{photo.category}</p>
             </Link>
           </li>
         ))}

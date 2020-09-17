@@ -1,38 +1,67 @@
+import Carousel from 'react-multi-carousel';
 import React from 'react';
-import Slider from 'react-animated-slider';
+import 'react-multi-carousel/lib/styles.css';
 import content from './content';
-import 'react-animated-slider/build/horizontal.css';
-import './employeestyle.css';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
+const style = {
+  backgroundSize: 'center',
+borderRadius: 30}
 
-
-const EmployeeSlider = () => (
-  <div className='container'>
-    <div className='text-center employeecarholder'>
-      <div className='text-center m-60'>
-        <h2 className='text-blue fw-300'>Our Employees Make Us Great</h2>
+const EmployeeSlides = content.map((employee) => (
+  <div className='mr-10 ml-10 pr-20 pl-20 text-center mt-30'>
+    <div className='container'>
+      <div>
+        <img
+          className='img-fluid h-500 box-shadow'
+          src={employee.image}
+          alt={employee.title}></img>
       </div>
-
-      <Slider className='slider-wrapper employee-slider' duration={3000}>
-        {content.map((photo, index) => (
-          <div
-            key={index}
-            className='slider-content employee-slider-content'
-            style={{
-              background: `url('${photo.image}')`,
-            }}>
-            <div className='inner employee-slider-inner'>
-              <h1 className='fs-40 fw-300'>{photo.title}</h1>
-              <p style={{ fontSize: 18 }} className='fw-300'>
-                {photo.description}
-              </p>
-            </div>
-          </div>
-        ))}
-      </Slider>
+      <p className="fw-300">{employee.description}</p>
+      <p className='text-blue'>{employee.title}</p>
     </div>
   </div>
-);
+));
 
-export default EmployeeSlider;
+export default function NewsCarousel() {
+  return (
+
+
+    <Carousel
+      swipeable={true}
+      draggable={true}
+      showDots={true}
+      responsive={responsive}
+      ssr={true}
+      infinite={true}
+      autoPlaySpeed={20}
+      keyBoardControl={true}
+      customTransition='all .5'
+      transitionDuration={500}
+      containerclassName='carousel-container'
+      removeArrowOnDeviceType={['tablet', 'mobile']}
+      dotListclassName='custom-dot-list-style'
+      itemclassName='carousel-item-padding-40-px'>
+      {EmployeeSlides}
+    </Carousel>
+  );
+}

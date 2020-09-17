@@ -24,45 +24,51 @@ const responsive = {
 };
 
 
+
   const newsArticles = newsdata.map((article) => (
-    <div class='col-12'>
-      <div class='mt-5'></div>
+    <div className='card mr-10 ml-10 pr-20 pl-20 box-shadow'>
       <div className='pb-60'>
-        <p class='mt-5'>
-          <a href={article.href} target='_blank'
-            rel="noopener noreferrer"
-          >
+        <div className='mt-30'>
+          <img
+            className='img'
+            
+            height='350'
+            src={article.src}
+            alt={article.title}></img>
+        </div>
+
+        <p className='mt-5 fs-25'>
+          <a href={article.href} target='_blank' rel='noopener noreferrer'>
             {article.title}
           </a>
         </p>
         <br />
 
-        <ul class='blog-post-info list-inline p-30'>
-          <li>{article.date}</li>
-          <li>
+    
+          <p>{article.date}</p>
+      
             <a
               className='mr-3'
               href='https://elevatortoday.com/'
               target='_blank'
-              rel="noopener noreferrer">
+              rel='noopener noreferrer'>
               <FontAwesomeIcon icon={faGlobe} />
               <span> ELEVATOR TODAY</span>
             </a>
-          </li>
+     
           <div>
             <br />
-            <a
-              href={article.href}
-              target='_blank'
-              rel="noopener noreferrer"
-              class='btn btn-reveal btn-default b-0 btn-shadow-1'>
-              <span class='text-blue'>
-                
-                Read Article
-              </span>
-            </a>
+            <div className="mb-30">
+              <a
+                href={article.href}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn btn-reveal btn-default b-0 btn-shadow-1'>
+                <span className='text-blue fs-20'>Read Article</span>
+              </a>
+            </div>
           </div>
-        </ul>
+   
       </div>
     </div>
   ));
@@ -81,10 +87,10 @@ return (
     keyBoardControl={true}
     customTransition='all .5'
     transitionDuration={500}
-    containerClass='carousel-container'
+    containerclassName='carousel-container'
     removeArrowOnDeviceType={['tablet', 'mobile']}
-    dotListClass='custom-dot-list-style'
-    itemClass='carousel-item-padding-40-px'>
+    dotListclassName='custom-dot-list-style'
+    itemclassName='carousel-item-padding-40-px'>
     {newsArticles}
   </Carousel>
 );

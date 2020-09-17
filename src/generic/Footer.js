@@ -10,15 +10,15 @@ import Map from './map/Map';
 export default function Footer() {
   return (
     <>
-      <div id='contact' className='container mt-30'></div>
+      <div id='contact' className='container-fluid mt-30'></div>
       <section>
         <div className='container-fluid'>
           <h2 className='text-center text-blue fw-300'>
             Questions? Get in touch{' '}
           </h2>
-
+          <hr />
           <div className='row'>
-            <div className='col-md-8 col-sm-8'>
+            <div className='col-md-6 col-sm-6'>
               <br />
               <div id='alert_success' className='alert alert-success mb-30'>
                 <button
@@ -66,10 +66,9 @@ export default function Footer() {
                         type='text'
                         className='form-control'
                         name='contact[name][required]'
-                        id='contact:name'
                       />
                     </div>
-                    <div className='col-4'>
+                    <div className='col-6'>
                       <label htmlFor='contact:businessname'>
                         Business Name
                       </label>
@@ -80,7 +79,7 @@ export default function Footer() {
                         id='businessname'
                       />
                     </div>
-                    <div className='col-4'>
+                    <div className='col-5'>
                       <label htmlFor='contact:email'>E-mail Address *</label>
                       <input
                         required
@@ -110,7 +109,6 @@ export default function Footer() {
                         type='text'
                         className='form-control'
                         name='contact[projectname][required]'
-                        id='contact:projectname'
                       />
                     </div>
                     <div className='col-4'>
@@ -122,7 +120,6 @@ export default function Footer() {
                         type='text'
                         className='form-control'
                         name='contact[projectname][required]'
-                        id='contact:projectname'
                       />
                     </div>
                     <div className='col-md-4'>
@@ -185,9 +182,11 @@ export default function Footer() {
               <h5 className='pb-10 text-center'>
                 Visit Our World Class Offices
               </h5>
-              <br />
+              <hr />
+
               <Map />
-              <br />
+
+              <hr />
               <p>
                 <span className='block'>
                   <strong>

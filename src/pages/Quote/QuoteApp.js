@@ -56,6 +56,8 @@ export default function QuoteApp() {
             setInputs({ ...inputs, ErrorHappened: true });
           } else if (inputs.Floors <= 0) {
             setInputs({ ...inputs, ErrorHappened: true });
+          } else if (inputs.Basements > inputs.Floors) {
+            setInputs({ ...inputs, ErrorHappened: true });
           }
           break;
 

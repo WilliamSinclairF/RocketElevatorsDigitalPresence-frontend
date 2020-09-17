@@ -50,9 +50,13 @@ export default function Header() {
             <Nav.Link href='/#portfolio'>
               <p className='fw-300 fs-20 mt-25'>PORTFOLIO</p>
             </Nav.Link>
+            <Nav.Link href='#news'>
+              <p className='fw-300 fs-20 mt-25'>NEWS</p>
+            </Nav.Link>
             <Nav.Link href='#contact'>
               <p className='fw-300 fs-20 mt-25'>CONTACT</p>
             </Nav.Link>
+
             <Nav.Link
               as={Link}
               to='/quote'
