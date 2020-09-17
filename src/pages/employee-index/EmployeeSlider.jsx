@@ -33,7 +33,7 @@ const EmployeeSlides = content.map((employee) => (
       </div>
       <div className="mt-10 col-12 text-center">
         <p className='fw-300'>{employee.description}</p>
-        <p className='text-blue'>{employee.title}</p>
+        <p className='text-blue fw-300 fs-25'>{employee.title}</p>
       </div>
     </div>
   </div>

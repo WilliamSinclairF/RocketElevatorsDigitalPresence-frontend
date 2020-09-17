@@ -34,8 +34,12 @@ export default function IndexPage() {
 
       <IndexCTA />
       <PortfolioContainer />
-
-      <EmployeeSlider />
+      <section id='employees' className=''>
+        <h2 className='text-blue text-center fw-300'>
+          Proud Rocket Elevators Astronauts
+        </h2>
+        <EmployeeSlider />
+      </section>
       <NewsContainer />
       <Clients />
     </>
