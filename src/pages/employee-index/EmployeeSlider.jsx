@@ -2,8 +2,6 @@ import Carousel from 'react-multi-carousel';
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import content from './content';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const responsive = {
   desktop: {
@@ -23,9 +21,6 @@ const responsive = {
   },
 };
 
-const style = {
-  backgroundSize: 'center',
-borderRadius: 30}
 
 const EmployeeSlides = content.map((employee) => (
   <div className='mr-10 ml-10 pr-20 pl-20 text-center mt-30'>
