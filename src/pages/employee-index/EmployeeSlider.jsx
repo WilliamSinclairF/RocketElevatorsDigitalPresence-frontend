@@ -31,8 +31,10 @@ const EmployeeSlides = content.map((employee) => (
           src={employee.image}
           alt={employee.title}></img>
       </div>
-      <p className="fw-300">{employee.description}</p>
-      <p className='text-blue'>{employee.title}</p>
+      <div className="mt-10 col-12 text-center">
+        <p className='fw-300'>{employee.description}</p>
+        <p className='text-blue'>{employee.title}</p>
+      </div>
     </div>
   </div>
 ));
