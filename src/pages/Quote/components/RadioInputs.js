@@ -52,7 +52,7 @@ export default function RadioInputs({
                 labelPlacement='top'
                 value={button.value}
                 onChange={(event) => inputChangeHandler(event)}
-                onClick={inputValidation}
+                onClick={inputValidation()}
                 name={'Rate'}
                 control={
                   <Radio

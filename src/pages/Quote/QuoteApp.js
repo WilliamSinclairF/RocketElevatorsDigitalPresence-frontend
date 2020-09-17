@@ -68,9 +68,9 @@ export default function QuoteApp() {
           break;
 
         case 'corporate':
-          if (inputs.Floors < 0) {
+          if (inputs.Floors <= 0) {
             setInputs({ ...inputs, ErrorHappened: true });
-          } else if (inputs.Occupants < 0) {
+          } else if (inputs.Occupants <= 0) {
             setInputs({ ...inputs, ErrorHappened: true });
           }
           break;
@@ -78,7 +78,7 @@ export default function QuoteApp() {
         case 'hybrid':
           if (inputs.Floors < 0) {
             setInputs({ ...inputs, ErrorHappened: true });
-          } else if (inputs.Occupants < 0) {
+          } else if (inputs.Occupants <= 0) {
             setInputs({ ...inputs, ErrorHappened: true });
           }
           break;

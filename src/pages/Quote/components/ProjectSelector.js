@@ -32,6 +32,7 @@ export default function ProjectSelector({
       Occupants: '',
       Elevators: '',
       Rate: '',
+      ErrorHappened: false,
     });
 
     setQuote({

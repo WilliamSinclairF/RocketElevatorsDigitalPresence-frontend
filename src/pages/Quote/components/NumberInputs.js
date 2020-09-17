@@ -50,7 +50,7 @@ export default function NumberInputs({
               {field.required && <strong>*</strong>}
             </InputLabel>
             <TextField
-              error={inputs.ErrorHappened ? true : false}
+              error={field.Error && inputs.ErrorHappened ? true : false}
               key={field.key}
               name={field.Name}
               helperText={inputs.ErrorHappened ? field.Error : ''}
