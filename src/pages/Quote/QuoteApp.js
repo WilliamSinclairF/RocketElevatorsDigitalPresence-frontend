@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './components/staranim.css';
 
 import RadioInputs from './components/RadioInputs';
 import NumberInputs from './components/NumberInputs';
@@ -128,13 +127,12 @@ export default function QuoteApp() {
         <ScrollToTopOnMount />
         <ScrollUpButton />
         <MainHeader />
-      </section>
 
-      <section>
         <ProjectSelector
           inputs={inputs}
           inputChangeHandler={inputChangeHandler}
           setInputs={setInputs}
+          setQuote={setQuote}
         />
 
         {inputs.SelectedProject === '' ? null : (

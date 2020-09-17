@@ -16,7 +16,6 @@ import './assets/css/layout.css';
 import './assets/css/header-1.css';
 import './assets/css/blue.css';
 import './assets/css/normalize.css';
-import './pages/Quote/Quote.css';
 
 import {
   BrowserRouter as Router,

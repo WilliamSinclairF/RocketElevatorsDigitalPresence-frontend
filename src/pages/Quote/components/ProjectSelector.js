@@ -8,24 +8,10 @@ import Select from '@material-ui/core/Select';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    fontSize: 20,
-    minWidth: 300,
-    padding: 30,
+    minWidth: 250,
   },
   selectEmpty: {
-    marginTop: theme.spacing(1),
-    fontSize: 20,
-    minWidth: 300,
-  },
-
-  label: {
-    fontSize: 20,
-    minWidth: 300,
-    color: 'blue',
-  },
-  input: {
-    fontSize: 20,
-    minWidth: 300,
+    marginTop: theme.spacing(2),
   },
 }));
 
@@ -33,6 +19,7 @@ export default function ProjectSelector({
   inputs,
   setInputs,
   inputChangeHandler,
+  setQuote,
 }) {
   const classes = useStyles();
 
@@ -46,14 +33,20 @@ export default function ProjectSelector({
       Elevators: '',
       Rate: '',
     });
+
+    setQuote({
+      id: '...',
+      totalShafts: '...',
+      totalColumns: '...',
+      installFee: '...',
+      subTotal: '...',
+      total: '...',
+    });
     // eslint-disable-next-line
   }, [inputs.SelectedProject]);
 
   return (
     <div className='container justify-content-center text-center mb-30'>
-      <div className='container mb-30 mb-30'>
-        <h2 className='text-blue'>Select Your Project Type</h2>
-      </div>
       <FormControl className={classes.formControl}>
         <InputLabel id='selectlabel' className={classes.label}>
           Project Type
