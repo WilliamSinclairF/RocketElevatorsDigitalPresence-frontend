@@ -9,7 +9,7 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -37,16 +37,13 @@ const responsive = {
             alt={article.title}></img>
         </div>
 
-        <p className='mt-5 fs-25'>
+        <p className='mt-5 fs-15'>
           <a href={article.href} target='_blank' rel='noopener noreferrer'>
             {article.title}
           </a>
         </p>
-        <br />
-
-    
+ 
           <p>{article.date}</p>
-      
             <a
               className='mr-3'
               href='https://elevatortoday.com/'
@@ -55,10 +52,9 @@ const responsive = {
               <FontAwesomeIcon icon={faGlobe} />
               <span> ELEVATOR TODAY</span>
             </a>
-     
           <div>
-            <br />
-            <div className="mb-30">
+    
+            <div className="mb-30 mt-20">
               <a
                 href={article.href}
                 target='_blank'
